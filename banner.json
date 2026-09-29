@@ -1,0 +1,68 @@
+{
+  "repo": "picokit-41-provisioning",
+  "eyebrow": "PICOKIT // LESSON 41",
+  "title": "PICOKIT // PROVISIONING",
+  "subtitle": "PER-DEVICE KEY FROM DEVICE ID + SALT + TWO KEYS PROVEN DIFFERENT",
+  "accent": "#6100FF",
+  "dim": "#3C009E",
+  "white": "#DDD2FF",
+  "cyan": "#7FD8E0",
+  "bg": "#060011",
+  "bg_edge": "#010005",
+  "icon": "key",
+  "panel_status": "DEVICE 41  ·  SALT bound  ·  KEYS differ",
+  "chips": [
+    {
+      "label": "DEVICE",
+      "value": "41"
+    },
+    {
+      "label": "KDF",
+      "value": "argon2id"
+    },
+    {
+      "label": "SALT",
+      "value": "bound"
+    },
+    {
+      "label": "RADIO",
+      "value": "-32 dBm"
+    }
+  ],
+  "terminal": [
+    "$ gateway listen /dev/cu.usbserial-A50285BI",
+    "[*] node 00041  seq 21  HEARTBEAT  AEAD ok",
+    "[*] anti-replay window ok  counter 21",
+    "[+] device 41 key derived  salt bound",
+    "[+] device 42 key differs  rssi -32  snr 9.0"
+  ],
+  "categories": [
+    "DEVICE",
+    "SALT",
+    "KEY",
+    "LINK"
+  ],
+  "cards": [
+    {
+      "tag": "PV-01",
+      "label": "device",
+      "value": "41"
+    },
+    {
+      "tag": "PV-02",
+      "label": "salt",
+      "value": "bound"
+    },
+    {
+      "tag": "PV-03",
+      "label": "keys",
+      "value": "differ"
+    }
+  ],
+  "footer": [
+    "1 NODE  ·  1 GATEWAY  ·  2 WAY LORA  ·  NO PLAINTEXT",
+    "PICOKIT SERIES  ·  ID  ·  SALT  ·  RADIO  ==[ PROVISION ]=="
+  ],
+  "layout": "panel",
+  "stat": "41"
+}
